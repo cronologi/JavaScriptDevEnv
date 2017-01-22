@@ -1,6 +1,6 @@
 # JavaScriptDevEnv
 
-This is a JavaScript Development Environment setup with webpack, babel, npm scritps etc.
+This is a JavaScript Development Environment setup with express, webpack, babel, npm scritps etc.
 
 ## Next
 
