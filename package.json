@@ -1,14 +1,14 @@
 {
   "name": "javascript-development-environment",
   "version": "1.0.0",
-  "description": "JavaScript development environment Pluralsight course by Cory House",
+  "description": "JavaScript development environment by Davor Vukovic",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
     "start-ngrok": "ngrok http 3030"
   },
-  "author": "Cory House",
+  "author": "Davor Vukovic",
   "license": "MIT",
   "dependencies": {
     "whatwg-fetch": "1.0.0"
