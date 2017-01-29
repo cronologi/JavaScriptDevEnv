@@ -1,0 +1,4 @@
+These lines are needed in the package.json for linting to work properly:
+
+"lint": "esw webpack.config.* src buildScripts --color"
+"lint:watch": "npm run lint -- --watch"
