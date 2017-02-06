@@ -1,7 +1,7 @@
 # JavaScriptDevEnv
 
-This is a JavaScript Development Environment setup with express, webpack, babel, npm scritps etc.
+A JavaScript development environment setup with express, webpack, babel, npm scritps, production builds, minification, cache busting, api mock, etc.
 
-## Next
+## In Progress
 
-Next commits will have linting, testing and continuous integration configured as well.
+This is still work in progress. Final release is expected on 20/2/2017.
