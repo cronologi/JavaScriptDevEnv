@@ -19,6 +19,8 @@ export default {
     filename: "[name].[chunkhash].js"
   },
   plugins: [
+    // Generate an external css file with a hash in the filename
+    new ExtractTextPlugin('[name].[contenthash].css'),
     // Hash the files using MD6 so that their names change when the content changes.
     new WebpackMd5Hash(),
     // Use CommonsChunkPlugin to create a separate bundle
