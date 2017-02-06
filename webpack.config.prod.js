@@ -18,7 +18,7 @@ export default {
     publicPath: "/",
     filename: "[name].[chunkhash].js"
   },
-  plugins: [
+  plugins: [ // Test
     // Generate an external css file with a hash in the filename
     new ExtractTextPlugin('[name].[contenthash].css'),
     // Hash the files using MD6 so that their names change when the content changes.
