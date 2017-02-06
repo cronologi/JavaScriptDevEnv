@@ -1,3 +1,13 @@
+<!--
+  **NOTE** This is a template for index.html.
+  Ot uses ejs and htmlWebpackPlugin to generate a different index.html for each environment.
+  htmlWebpackPlugin will dynamically add references to the script and styles that it bundles
+  to this file. The generated bundles have hash-based filenames,
+  so it's necessary to add the reference dynamically.
+  For more info on ejs, see http://www.embeddedjs.com/.
+  For examples of using it with htmlWebpackPlugin,
+  see https://github.com/jaketrent/html-webpack-template/blob/master/index.ejs'
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,21 +18,25 @@
 </head>
 
 <body>
+  <% if (htmlWebpackPlugin.options.myCustomToken) { %>
+    <div>This is a dynamically injected div to show of HTML templates via EmbeddedJS</div>
+    <div>'<%=htmlWebpackPlugin.options.myCustomToken%>'</div>
+    <% } %>
 
-  <h1>Users</h1>
-  <table>
-    <thead>
-      <th>&nbsp;</th>
-      <th>Id</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
-    </thead>
-    <tbody id="users">
+      <h1>Users</h1>
+      <table>
+        <thead>
+          <th>&nbsp;</th>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </thead>
+        <tbody id="users">
 
 
-    </tbody>
-  </table>
+        </tbody>
+      </table>
 </body>
 
 </html>
