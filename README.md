@@ -1,6 +1,6 @@
 # JavaScriptDevEnv
 
-Allaround javascript development environment which includes popular features such as:
+Simple JavaScript development environment which includes popular features such as:
 * Configured .editorConfig file to setup IDE editor
 * NodeJs and npm
 * npm packages security checks
